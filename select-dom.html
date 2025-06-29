@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- <div class="card">Div1</div>
+  <div class="card">Div2</div>
+  <div class="card">Div3</div> -->
+
+  <!-- <button class="mybtn">Click</button> -->
+
+  <input type="radio" class="gender" name="gender" value="male" onchange="selectedGender()">male
+  <input type="radio" class="gender" name="gender" value="female" onchange="selectedGender()">female
+  <input type="radio" class="gender" name="gender" value="anything" onchange="selectedGender()">anything
+
+  <script>
+    // const boxes = document.querySelectorAll('.card');
+    // console.log(boxes);
+    // boxes.forEach((box) => {
+    //   box.style.backgroundColor = 'red';
+    // });
+
+    // const button = document.querySelector('.mybtn');
+    // button.addEventListener('click', ({name = 'phum'}) => {
+    //   console.log(name,'clicked');
+    //   });
+
+    const genders = document.querySelectorAll('.gender');
+    console.log(genders);
+    const selectedGender = () => { 
+      genders.forEach((gender) =>{
+        console.log(gender.value);
+      });
+    };
+  </script>
+</body>
+</html>

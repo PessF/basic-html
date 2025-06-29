@@ -47,9 +47,41 @@
     // for(let i = 0; i < number.length; i++){
     //   console.log(number[i]+1);
     // }
-    const friuts = ["apple", "banana", "cherry"];
-    const result = friuts.map((friut) => friut + '🌳');
-    console.log(result); 
+
+    // const friuts = ["apple", "banana", "cherry"];
+    // const result = friuts.map((friut) => friut + '🌳');
+    // console.log(result); 
+
+    // const calculateRectangleArea = (width, height) => {
+    //   return width * height;
+    // }
+
+    // console.log(calculateRectangleArea(5, 10));
+
+const calculateGrade = (score) => {
+  switch (true) { 
+    case score > 80:
+      return `${score},A`; 
+    case score >= 75 && score < 80: 
+      return `${score},B+`;
+    case score >= 70 && score < 75: 
+      return `${score},B`;
+    case score >= 65 && score < 70: 
+      return `${score},C+`;
+    case score >= 60 && score < 65: 
+      return `${score},C`;
+    case score >= 55 && score < 60: 
+      return `${score},D+`;
+    case score >= 50 && score < 55: 
+      return `${score},D`;
+    case score < 50: 
+      return `${score},F`;
+    default:
+      return "Invalid score"; 
+  }
+};
+    console.log(calculateGrade(76)); // B+
+    console.log(calculateGrade(55)); // D+
   </script>
 </body>
 
